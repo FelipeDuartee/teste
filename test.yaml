@@ -1,0 +1,22 @@
+swagger: "2.0"
+info: 
+  title: "Swagger Sample App"
+  description: "Please click Terms of service"
+  termsOfService: "https://example.com/terms"
+  contact: 
+    name: "API Support"
+    url: "https://example.com/support"
+    email: "support@example.com"
+  version: "1.0.1"
+paths:
+  /pets:
+    get:
+      summary: "Get all pets"
+      description: "Returns all pets from the system"
+      responses:
+        '200':
+          description: "A list of pets."
+          schema:
+            type: "array"
+            items:
+              type: "string"
